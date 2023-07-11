@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HR.ManagmentSystem.Domain
+﻿namespace HR.ManagmentSystem.Domain
 {
-    internal class LeaveType
+    public class LeaveType
     {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public int DefaultDays { get; set; }
     }
 }
