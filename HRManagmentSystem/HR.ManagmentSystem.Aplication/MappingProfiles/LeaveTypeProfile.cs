@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using HR.ManagmentSystem.Aplication.Features.LeaveType.Queries.GetAllLeaveTypes;
 using HR.ManagmentSystem.Domain;
 using System;
 using System.Collections.Generic;
