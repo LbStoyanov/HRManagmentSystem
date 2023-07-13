@@ -18,9 +18,13 @@ namespace HR.ManagmentSystem.Aplication.Features.LeaveType.Queries.GetAllLeaveTy
             this._mapper = mapper;
             this._leaveTypeRepository = leaveTypeRepository;
         }
-        public Task<List<LeaveTypeDto>> Handle(GetLeaveTypesQuery request, CancellationToken cancellationToken)
+        public async Task<List<LeaveTypeDto>> Handle(GetLeaveTypesQuery request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var leaveTypes = await _leaveTypeRepository.GetAsync();
+
+            var data = _mapper.Map<List<LeaveTypeDto>>(leaveTypes);
+
+            return data;
         }
     }
 }
