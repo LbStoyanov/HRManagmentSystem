@@ -1,12 +1,14 @@
-﻿using System;
+﻿using HR.ManagmentSystem.Domain;
+using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.ManagmentSystem.Aplication.Features.LeaveType.Commands.DeleteLeaveType
+namespace HR.ManagmentSystem.Aplication.Features.LeaveType.Commands.DeleteLeaveType;
+
+public class DeleteLeaveTypeCommand : IRequest<Unit>
 {
-    internal class DeleteLeaveTypeCommand
-    {
-    }
+    public int Id { get; set; }
 }

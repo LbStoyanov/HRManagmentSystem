@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 
-namespace HR.ManagmentSystem.Aplication.Features.LeaveType.Commands.UpdateLeaveType
+
+namespace HR.ManagmentSystem.Aplication.Features.LeaveType.Commands.UpdateLeaveType;
+
+public class UpdateLeaveTypeCommand : IRequest<Unit>
 {
-    internal class UpdateLeaveTypeCommand
-    {
-    }
+    public string Name { get; set; } = string.Empty;
+    public int DefaultDays { get; set; }
 }
