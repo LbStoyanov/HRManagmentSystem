@@ -16,8 +16,4 @@
     <ProjectReference Include="..\HR.ManagmentSystem.Domain\HR.ManagmentSystem.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\LeaveType\Commands\" />
-  </ItemGroup>
-
 </Project>
