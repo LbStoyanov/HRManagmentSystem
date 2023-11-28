@@ -1,6 +1,6 @@
 namespace HRManagmentSystem.Data
 {
-    public partial class BaseEntity
+    public abstract class BaseEntity
     {
         public int Id { get; set; }
 
